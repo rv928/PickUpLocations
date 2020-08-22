@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PickUpLocationCell" rowHeight="102" id="KGk-i7-Jjw" customClass="PickUpLocationCell" customModule="PickUpLocations" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39a-tF-ikq">
+                        <rect key="frame" x="6" y="39" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Qps-jG-aFP"/>
+                            <constraint firstAttribute="width" constant="24" id="WeF-b6-CFS"/>
+                        </constraints>
+                        <state key="normal" image="correct-unfilled"/>
+                        <state key="selected" image="correct-filled"/>
+                        <connections>
+                            <action selector="checkButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7ZA-nT-Dzt"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="city" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGG-RA-C49">
+                        <rect key="frame" x="38" y="10" width="204" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="Dz5-Eo-yM9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="1.00 km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53a-OO-Ty5">
+                        <rect key="frame" x="246" y="44" width="70" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="FH8-Wo-w30"/>
+                            <constraint firstAttribute="width" constant="70" id="cdR-Sc-ROE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqP-3V-bUt">
+                        <rect key="frame" x="38" y="59" width="204" height="33"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8T-Iy-NRh">
+                        <rect key="frame" x="38" y="35" width="204" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="pCK-VA-sOM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="39a-tF-ikq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0fK-oV-azE"/>
+                    <constraint firstItem="vGG-RA-C49" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="2zY-QF-lZL"/>
+                    <constraint firstItem="J8T-Iy-NRh" firstAttribute="top" secondItem="vGG-RA-C49" secondAttribute="bottom" constant="8" id="5n3-ev-ltq"/>
+                    <constraint firstItem="53a-OO-Ty5" firstAttribute="leading" secondItem="J8T-Iy-NRh" secondAttribute="trailing" constant="4" id="9xU-59-MWi"/>
+                    <constraint firstItem="39a-tF-ikq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="B5V-ne-LXi"/>
+                    <constraint firstItem="bqP-3V-bUt" firstAttribute="trailing" secondItem="J8T-Iy-NRh" secondAttribute="trailing" id="Brg-Mj-lcV"/>
+                    <constraint firstItem="bqP-3V-bUt" firstAttribute="leading" secondItem="J8T-Iy-NRh" secondAttribute="leading" id="M9U-I0-Ct9"/>
+                    <constraint firstItem="bqP-3V-bUt" firstAttribute="top" secondItem="J8T-Iy-NRh" secondAttribute="bottom" constant="5" id="VtT-9k-QEN"/>
+                    <constraint firstItem="vGG-RA-C49" firstAttribute="trailing" secondItem="J8T-Iy-NRh" secondAttribute="trailing" id="aea-em-ntO"/>
+                    <constraint firstAttribute="trailing" secondItem="53a-OO-Ty5" secondAttribute="trailing" constant="4" id="mot-cV-rRL"/>
+                    <constraint firstAttribute="bottom" secondItem="bqP-3V-bUt" secondAttribute="bottom" constant="10" id="paI-B2-G9u"/>
+                    <constraint firstItem="53a-OO-Ty5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ps4-7A-BsY"/>
+                    <constraint firstItem="vGG-RA-C49" firstAttribute="leading" secondItem="J8T-Iy-NRh" secondAttribute="leading" id="vxT-77-Bcj"/>
+                    <constraint firstItem="J8T-Iy-NRh" firstAttribute="leading" secondItem="39a-tF-ikq" secondAttribute="trailing" constant="8" id="xRs-JR-7Co"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressLabel" destination="bqP-3V-bUt" id="sgd-7J-4vl"/>
+                <outlet property="checkButton" destination="39a-tF-ikq" id="KhY-zU-ICf"/>
+                <outlet property="cityLabel" destination="vGG-RA-C49" id="Gwh-1S-FCW"/>
+                <outlet property="distanceLabel" destination="53a-OO-Ty5" id="KjU-U2-4Db"/>
+                <outlet property="nameLabel" destination="J8T-Iy-NRh" id="NSy-y0-qvE"/>
+            </connections>
+            <point key="canvasLocation" x="-345" y="40"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="correct-filled" width="44" height="44"/>
+        <image name="correct-unfilled" width="44" height="44"/>
+    </resources>
+</document>

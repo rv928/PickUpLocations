@@ -1,0 +1,955 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62FCF6BC50B9482C4C197FE3 /* Pods_PickUpLocations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DFA8F6E3422650CA32B500 /* Pods_PickUpLocations.framework */; };
+		B1023E8724ECF6C300F6E1C1 /* PickUpLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1023E8524ECF6C300F6E1C1 /* PickUpLocationCell.swift */; };
+		B1023E8824ECF6C300F6E1C1 /* PickUpLocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1023E8624ECF6C300F6E1C1 /* PickUpLocationCell.xib */; };
+		B1023E8A24ECF6E700F6E1C1 /* PickUpLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1023E8924ECF6E700F6E1C1 /* PickUpLocationViewController.swift */; };
+		B1023E8C24ECF77D00F6E1C1 /* PickUpListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1023E8B24ECF77D00F6E1C1 /* PickUpListModels.swift */; };
+		B1023E8E24ECF79400F6E1C1 /* PickUpListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1023E8D24ECF79400F6E1C1 /* PickUpListInteractor.swift */; };
+		B1023E9024ECF7BD00F6E1C1 /* PickUpListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1023E8F24ECF7BD00F6E1C1 /* PickUpListWorker.swift */; };
+		B1023E9224ECF7D000F6E1C1 /* PickUpListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1023E9124ECF7D000F6E1C1 /* PickUpListService.swift */; };
+		B1023E9424ECF7DC00F6E1C1 /* PickUpListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1023E9324ECF7DC00F6E1C1 /* PickUpListPresenter.swift */; };
+		B1023E9624ECF7E800F6E1C1 /* PickUpListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1023E9524ECF7E800F6E1C1 /* PickUpListRouter.swift */; };
+		B126F0AA24ECED46006582BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B126F0A924ECED46006582BD /* Assets.xcassets */; };
+		B126F0AD24ECED46006582BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B126F0AB24ECED46006582BD /* LaunchScreen.storyboard */; };
+		B126F0B824ECED46006582BD /* PickUpLocationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0B724ECED46006582BD /* PickUpLocationsTests.swift */; };
+		B126F0C324ECED46006582BD /* PickUpLocationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0C224ECED46006582BD /* PickUpLocationsUITests.swift */; };
+		B126F0EB24ECF2E2006582BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B126F0D324ECF2E1006582BD /* Main.storyboard */; };
+		B126F0EC24ECF2E2006582BD /* Dictionary+Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0D624ECF2E1006582BD /* Dictionary+Decoder.swift */; };
+		B126F0ED24ECF2E2006582BD /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0D824ECF2E1006582BD /* Tools.swift */; };
+		B126F0EE24ECF2E2006582BD /* LocationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0DA24ECF2E1006582BD /* LocationButton.swift */; };
+		B126F0EF24ECF2E2006582BD /* UIImageView+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0DC24ECF2E1006582BD /* UIImageView+Cache.swift */; };
+		B126F0F024ECF2E2006582BD /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0DD24ECF2E1006582BD /* UIAlertControllerExtension.swift */; };
+		B126F0F224ECF2E2006582BD /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0DF24ECF2E1006582BD /* UIColor+Hex.swift */; };
+		B126F0F424ECF2E2006582BD /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0E224ECF2E1006582BD /* APIManager.swift */; };
+		B126F0F524ECF2E2006582BD /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0E424ECF2E1006582BD /* Reachability.swift */; };
+		B126F0F624ECF2E2006582BD /* UIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0E624ECF2E1006582BD /* UIConstant.swift */; };
+		B126F0F724ECF2E2006582BD /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0E724ECF2E1006582BD /* AppConstant.swift */; };
+		B126F0F824ECF2E2006582BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0E924ECF2E2006582BD /* AppDelegate.swift */; };
+		B126F0F924ECF2E2006582BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0EA24ECF2E2006582BD /* SceneDelegate.swift */; };
+		B130F81924EE78FE00E8AFB4 /* Seeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B130F81824EE78FE00E8AFB4 /* Seeds.swift */; };
+		B130F81B24EE7CBF00E8AFB4 /* TestDoubles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B130F81A24EE7CBF00E8AFB4 /* TestDoubles.swift */; };
+		B130F82224EE828F00E8AFB4 /* PickUpListInteractorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B130F82124EE828F00E8AFB4 /* PickUpListInteractorUnitTests.swift */; };
+		B130F82424EE82F000E8AFB4 /* PickUpListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B130F82324EE82F000E8AFB4 /* PickUpListPresenterTests.swift */; };
+		B130F82624EE83F300E8AFB4 /* PickUpLocationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B130F82524EE83F300E8AFB4 /* PickUpLocationViewControllerTests.swift */; };
+		B130F82824EE87ED00E8AFB4 /* CustomKeywordsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B130F82724EE87ED00E8AFB4 /* CustomKeywordsUtils.swift */; };
+		B1BC03BB24EE605B00B75372 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BC03BA24EE605B00B75372 /* LocationManager.swift */; };
+		B1BC03BD24EE6F9100B75372 /* Array+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BC03BC24EE6F9100B75372 /* Array+Location.swift */; };
+		B1BC03BF24EE776400B75372 /* CLLocationDistance+km.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BC03BE24EE776400B75372 /* CLLocationDistance+km.swift */; };
+		D508B032ECFD0FC22282E70A /* Pods_PickUpLocationsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEF9BB1A07161463EF93A8E /* Pods_PickUpLocationsTests.framework */; };
+		FA4CEE974295D21663FA7BB1 /* Pods_PickUpLocations_PickUpLocationsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C22F38A6B459512465A1C8E /* Pods_PickUpLocations_PickUpLocationsUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B126F0B424ECED46006582BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B126F09524ECED41006582BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B126F09C24ECED41006582BD;
+			remoteInfo = PickUpLocations;
+		};
+		B126F0BF24ECED46006582BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B126F09524ECED41006582BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B126F09C24ECED41006582BD;
+			remoteInfo = PickUpLocations;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		024984AA8CEA4EF604CE55FD /* Pods-PickUpLocations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickUpLocations.release.xcconfig"; path = "Target Support Files/Pods-PickUpLocations/Pods-PickUpLocations.release.xcconfig"; sourceTree = "<group>"; };
+		079E834E1164644DB2C94602 /* Pods-PickUpLocationsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickUpLocationsTests.debug.xcconfig"; path = "Target Support Files/Pods-PickUpLocationsTests/Pods-PickUpLocationsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		07EA43CCEA6D06E229462A36 /* Pods-PickUpLocationsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickUpLocationsTests.release.xcconfig"; path = "Target Support Files/Pods-PickUpLocationsTests/Pods-PickUpLocationsTests.release.xcconfig"; sourceTree = "<group>"; };
+		2EE6E8EB4A8A3B53C5CFC0A7 /* Pods-PickUpLocations-PickUpLocationsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickUpLocations-PickUpLocationsUITests.release.xcconfig"; path = "Target Support Files/Pods-PickUpLocations-PickUpLocationsUITests/Pods-PickUpLocations-PickUpLocationsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3189449566083730DE968386 /* Pods-PickUpLocations-PickUpLocationsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickUpLocations-PickUpLocationsUITests.debug.xcconfig"; path = "Target Support Files/Pods-PickUpLocations-PickUpLocationsUITests/Pods-PickUpLocations-PickUpLocationsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		76E791189B2C5CBFCEAE5930 /* Pods-PickUpLocations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickUpLocations.debug.xcconfig"; path = "Target Support Files/Pods-PickUpLocations/Pods-PickUpLocations.debug.xcconfig"; sourceTree = "<group>"; };
+		7C22F38A6B459512465A1C8E /* Pods_PickUpLocations_PickUpLocationsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PickUpLocations_PickUpLocationsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FEF9BB1A07161463EF93A8E /* Pods_PickUpLocationsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PickUpLocationsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1023E8524ECF6C300F6E1C1 /* PickUpLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpLocationCell.swift; sourceTree = "<group>"; };
+		B1023E8624ECF6C300F6E1C1 /* PickUpLocationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickUpLocationCell.xib; sourceTree = "<group>"; };
+		B1023E8924ECF6E700F6E1C1 /* PickUpLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpLocationViewController.swift; sourceTree = "<group>"; };
+		B1023E8B24ECF77D00F6E1C1 /* PickUpListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpListModels.swift; sourceTree = "<group>"; };
+		B1023E8D24ECF79400F6E1C1 /* PickUpListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpListInteractor.swift; sourceTree = "<group>"; };
+		B1023E8F24ECF7BD00F6E1C1 /* PickUpListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpListWorker.swift; sourceTree = "<group>"; };
+		B1023E9124ECF7D000F6E1C1 /* PickUpListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpListService.swift; sourceTree = "<group>"; };
+		B1023E9324ECF7DC00F6E1C1 /* PickUpListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpListPresenter.swift; sourceTree = "<group>"; };
+		B1023E9524ECF7E800F6E1C1 /* PickUpListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpListRouter.swift; sourceTree = "<group>"; };
+		B126F09D24ECED41006582BD /* PickUpLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickUpLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B126F0A924ECED46006582BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B126F0AC24ECED46006582BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B126F0AE24ECED46006582BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B126F0B324ECED46006582BD /* PickUpLocationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickUpLocationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B126F0B724ECED46006582BD /* PickUpLocationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpLocationsTests.swift; sourceTree = "<group>"; };
+		B126F0B924ECED46006582BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B126F0BE24ECED46006582BD /* PickUpLocationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickUpLocationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B126F0C224ECED46006582BD /* PickUpLocationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpLocationsUITests.swift; sourceTree = "<group>"; };
+		B126F0C424ECED46006582BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B126F0D324ECF2E1006582BD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B126F0D624ECF2E1006582BD /* Dictionary+Decoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Decoder.swift"; sourceTree = "<group>"; };
+		B126F0D824ECF2E1006582BD /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		B126F0DA24ECF2E1006582BD /* LocationButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationButton.swift; sourceTree = "<group>"; };
+		B126F0DC24ECF2E1006582BD /* UIImageView+Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Cache.swift"; sourceTree = "<group>"; };
+		B126F0DD24ECF2E1006582BD /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		B126F0DF24ECF2E1006582BD /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		B126F0E224ECF2E1006582BD /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		B126F0E424ECF2E1006582BD /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		B126F0E624ECF2E1006582BD /* UIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstant.swift; sourceTree = "<group>"; };
+		B126F0E724ECF2E1006582BD /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		B126F0E924ECF2E2006582BD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B126F0EA24ECF2E2006582BD /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B130F81824EE78FE00E8AFB4 /* Seeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seeds.swift; sourceTree = "<group>"; };
+		B130F81A24EE7CBF00E8AFB4 /* TestDoubles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDoubles.swift; sourceTree = "<group>"; };
+		B130F82124EE828F00E8AFB4 /* PickUpListInteractorUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpListInteractorUnitTests.swift; sourceTree = "<group>"; };
+		B130F82324EE82F000E8AFB4 /* PickUpListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpListPresenterTests.swift; sourceTree = "<group>"; };
+		B130F82524EE83F300E8AFB4 /* PickUpLocationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpLocationViewControllerTests.swift; sourceTree = "<group>"; };
+		B130F82724EE87ED00E8AFB4 /* CustomKeywordsUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKeywordsUtils.swift; sourceTree = "<group>"; };
+		B1BC03BA24EE605B00B75372 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		B1BC03BC24EE6F9100B75372 /* Array+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Location.swift"; sourceTree = "<group>"; };
+		B1BC03BE24EE776400B75372 /* CLLocationDistance+km.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationDistance+km.swift"; sourceTree = "<group>"; };
+		C5DFA8F6E3422650CA32B500 /* Pods_PickUpLocations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PickUpLocations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B126F09A24ECED41006582BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62FCF6BC50B9482C4C197FE3 /* Pods_PickUpLocations.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B126F0B024ECED46006582BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D508B032ECFD0FC22282E70A /* Pods_PickUpLocationsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B126F0BB24ECED46006582BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4CEE974295D21663FA7BB1 /* Pods_PickUpLocations_PickUpLocationsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14E685E19E4213F2C38C2441 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5DFA8F6E3422650CA32B500 /* Pods_PickUpLocations.framework */,
+				7C22F38A6B459512465A1C8E /* Pods_PickUpLocations_PickUpLocationsUITests.framework */,
+				9FEF9BB1A07161463EF93A8E /* Pods_PickUpLocationsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2202CB69DF23B45F4BCC2EAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76E791189B2C5CBFCEAE5930 /* Pods-PickUpLocations.debug.xcconfig */,
+				024984AA8CEA4EF604CE55FD /* Pods-PickUpLocations.release.xcconfig */,
+				3189449566083730DE968386 /* Pods-PickUpLocations-PickUpLocationsUITests.debug.xcconfig */,
+				2EE6E8EB4A8A3B53C5CFC0A7 /* Pods-PickUpLocations-PickUpLocationsUITests.release.xcconfig */,
+				079E834E1164644DB2C94602 /* Pods-PickUpLocationsTests.debug.xcconfig */,
+				07EA43CCEA6D06E229462A36 /* Pods-PickUpLocationsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B126F09424ECED41006582BD = {
+			isa = PBXGroup;
+			children = (
+				B126F09F24ECED41006582BD /* PickUpLocations */,
+				B126F0B624ECED46006582BD /* PickUpLocationsTests */,
+				B126F0C124ECED46006582BD /* PickUpLocationsUITests */,
+				B126F09E24ECED41006582BD /* Products */,
+				2202CB69DF23B45F4BCC2EAA /* Pods */,
+				14E685E19E4213F2C38C2441 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B126F09E24ECED41006582BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B126F09D24ECED41006582BD /* PickUpLocations.app */,
+				B126F0B324ECED46006582BD /* PickUpLocationsTests.xctest */,
+				B126F0BE24ECED46006582BD /* PickUpLocationsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B126F09F24ECED41006582BD /* PickUpLocations */ = {
+			isa = PBXGroup;
+			children = (
+				B126F0E824ECF2E2006582BD /* AppDelegate */,
+				B126F0E524ECF2E1006582BD /* Constant */,
+				B126F0D024ECF2E1006582BD /* PickUpLocationList */,
+				B126F0D224ECF2E1006582BD /* StoryBoard */,
+				B126F0D424ECF2E1006582BD /* SupportingClass */,
+				B126F0A924ECED46006582BD /* Assets.xcassets */,
+				B126F0AB24ECED46006582BD /* LaunchScreen.storyboard */,
+				B126F0AE24ECED46006582BD /* Info.plist */,
+			);
+			path = PickUpLocations;
+			sourceTree = "<group>";
+		};
+		B126F0B624ECED46006582BD /* PickUpLocationsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B126F0B724ECED46006582BD /* PickUpLocationsTests.swift */,
+				B126F0B924ECED46006582BD /* Info.plist */,
+				B130F81824EE78FE00E8AFB4 /* Seeds.swift */,
+				B130F81A24EE7CBF00E8AFB4 /* TestDoubles.swift */,
+				B130F81C24EE804800E8AFB4 /* PickUpListUnitTests */,
+			);
+			path = PickUpLocationsTests;
+			sourceTree = "<group>";
+		};
+		B126F0C124ECED46006582BD /* PickUpLocationsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B130F82724EE87ED00E8AFB4 /* CustomKeywordsUtils.swift */,
+				B126F0C224ECED46006582BD /* PickUpLocationsUITests.swift */,
+				B126F0C424ECED46006582BD /* Info.plist */,
+			);
+			path = PickUpLocationsUITests;
+			sourceTree = "<group>";
+		};
+		B126F0D024ECF2E1006582BD /* PickUpLocationList */ = {
+			isa = PBXGroup;
+			children = (
+				B126F0D124ECF2E1006582BD /* PickUpListCell */,
+				B1023E8924ECF6E700F6E1C1 /* PickUpLocationViewController.swift */,
+				B1023E8B24ECF77D00F6E1C1 /* PickUpListModels.swift */,
+				B1023E8D24ECF79400F6E1C1 /* PickUpListInteractor.swift */,
+				B1023E8F24ECF7BD00F6E1C1 /* PickUpListWorker.swift */,
+				B1023E9124ECF7D000F6E1C1 /* PickUpListService.swift */,
+				B1023E9324ECF7DC00F6E1C1 /* PickUpListPresenter.swift */,
+				B1023E9524ECF7E800F6E1C1 /* PickUpListRouter.swift */,
+			);
+			path = PickUpLocationList;
+			sourceTree = "<group>";
+		};
+		B126F0D124ECF2E1006582BD /* PickUpListCell */ = {
+			isa = PBXGroup;
+			children = (
+				B1023E8524ECF6C300F6E1C1 /* PickUpLocationCell.swift */,
+				B1023E8624ECF6C300F6E1C1 /* PickUpLocationCell.xib */,
+			);
+			path = PickUpListCell;
+			sourceTree = "<group>";
+		};
+		B126F0D224ECF2E1006582BD /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				B126F0D324ECF2E1006582BD /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		B126F0D424ECF2E1006582BD /* SupportingClass */ = {
+			isa = PBXGroup;
+			children = (
+				B1BC03B924EE604C00B75372 /* LocationManager */,
+				B126F0D524ECF2E1006582BD /* Generics */,
+				B126F0D724ECF2E1006582BD /* Tools */,
+				B126F0D924ECF2E1006582BD /* SubClass */,
+				B126F0DB24ECF2E1006582BD /* Extensions */,
+				B126F0E024ECF2E1006582BD /* APIManager */,
+				B126F0E324ECF2E1006582BD /* Reachability */,
+			);
+			path = SupportingClass;
+			sourceTree = "<group>";
+		};
+		B126F0D524ECF2E1006582BD /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				B126F0D624ECF2E1006582BD /* Dictionary+Decoder.swift */,
+			);
+			path = Generics;
+			sourceTree = "<group>";
+		};
+		B126F0D724ECF2E1006582BD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B126F0D824ECF2E1006582BD /* Tools.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B126F0D924ECF2E1006582BD /* SubClass */ = {
+			isa = PBXGroup;
+			children = (
+				B126F0DA24ECF2E1006582BD /* LocationButton.swift */,
+			);
+			path = SubClass;
+			sourceTree = "<group>";
+		};
+		B126F0DB24ECF2E1006582BD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B126F0DC24ECF2E1006582BD /* UIImageView+Cache.swift */,
+				B126F0DD24ECF2E1006582BD /* UIAlertControllerExtension.swift */,
+				B126F0DF24ECF2E1006582BD /* UIColor+Hex.swift */,
+				B1BC03BC24EE6F9100B75372 /* Array+Location.swift */,
+				B1BC03BE24EE776400B75372 /* CLLocationDistance+km.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B126F0E024ECF2E1006582BD /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				B126F0E224ECF2E1006582BD /* APIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		B126F0E324ECF2E1006582BD /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				B126F0E424ECF2E1006582BD /* Reachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		B126F0E524ECF2E1006582BD /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				B126F0E624ECF2E1006582BD /* UIConstant.swift */,
+				B126F0E724ECF2E1006582BD /* AppConstant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		B126F0E824ECF2E2006582BD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B126F0E924ECF2E2006582BD /* AppDelegate.swift */,
+				B126F0EA24ECF2E2006582BD /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B130F81C24EE804800E8AFB4 /* PickUpListUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				B130F82124EE828F00E8AFB4 /* PickUpListInteractorUnitTests.swift */,
+				B130F82324EE82F000E8AFB4 /* PickUpListPresenterTests.swift */,
+				B130F82524EE83F300E8AFB4 /* PickUpLocationViewControllerTests.swift */,
+			);
+			path = PickUpListUnitTests;
+			sourceTree = "<group>";
+		};
+		B1BC03B924EE604C00B75372 /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				B1BC03BA24EE605B00B75372 /* LocationManager.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B126F09C24ECED41006582BD /* PickUpLocations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B126F0C724ECED46006582BD /* Build configuration list for PBXNativeTarget "PickUpLocations" */;
+			buildPhases = (
+				EB45002A47E194EC2880B8FD /* [CP] Check Pods Manifest.lock */,
+				B126F09924ECED41006582BD /* Sources */,
+				B126F09A24ECED41006582BD /* Frameworks */,
+				B126F09B24ECED41006582BD /* Resources */,
+				4A6132A914A994EA546AF672 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PickUpLocations;
+			productName = PickUpLocations;
+			productReference = B126F09D24ECED41006582BD /* PickUpLocations.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B126F0B224ECED46006582BD /* PickUpLocationsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B126F0CA24ECED46006582BD /* Build configuration list for PBXNativeTarget "PickUpLocationsTests" */;
+			buildPhases = (
+				B2D4B7B31955976262E73DB9 /* [CP] Check Pods Manifest.lock */,
+				B126F0AF24ECED46006582BD /* Sources */,
+				B126F0B024ECED46006582BD /* Frameworks */,
+				B126F0B124ECED46006582BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B126F0B524ECED46006582BD /* PBXTargetDependency */,
+			);
+			name = PickUpLocationsTests;
+			productName = PickUpLocationsTests;
+			productReference = B126F0B324ECED46006582BD /* PickUpLocationsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B126F0BD24ECED46006582BD /* PickUpLocationsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B126F0CD24ECED46006582BD /* Build configuration list for PBXNativeTarget "PickUpLocationsUITests" */;
+			buildPhases = (
+				193F5B7EFA418B792235C8C7 /* [CP] Check Pods Manifest.lock */,
+				B126F0BA24ECED46006582BD /* Sources */,
+				B126F0BB24ECED46006582BD /* Frameworks */,
+				B126F0BC24ECED46006582BD /* Resources */,
+				54C67A90CFCDE536DD4AF4C0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B126F0C024ECED46006582BD /* PBXTargetDependency */,
+			);
+			name = PickUpLocationsUITests;
+			productName = PickUpLocationsUITests;
+			productReference = B126F0BE24ECED46006582BD /* PickUpLocationsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B126F09524ECED41006582BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Ravi Vora";
+				TargetAttributes = {
+					B126F09C24ECED41006582BD = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					B126F0B224ECED46006582BD = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = B126F09C24ECED41006582BD;
+					};
+					B126F0BD24ECED46006582BD = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = B126F09C24ECED41006582BD;
+					};
+				};
+			};
+			buildConfigurationList = B126F09824ECED41006582BD /* Build configuration list for PBXProject "PickUpLocations" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B126F09424ECED41006582BD;
+			productRefGroup = B126F09E24ECED41006582BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B126F09C24ECED41006582BD /* PickUpLocations */,
+				B126F0B224ECED46006582BD /* PickUpLocationsTests */,
+				B126F0BD24ECED46006582BD /* PickUpLocationsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B126F09B24ECED41006582BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1023E8824ECF6C300F6E1C1 /* PickUpLocationCell.xib in Resources */,
+				B126F0EB24ECF2E2006582BD /* Main.storyboard in Resources */,
+				B126F0AD24ECED46006582BD /* LaunchScreen.storyboard in Resources */,
+				B126F0AA24ECED46006582BD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B126F0B124ECED46006582BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B126F0BC24ECED46006582BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		193F5B7EFA418B792235C8C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PickUpLocations-PickUpLocationsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A6132A914A994EA546AF672 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PickUpLocations/Pods-PickUpLocations-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PickUpLocations/Pods-PickUpLocations-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PickUpLocations/Pods-PickUpLocations-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54C67A90CFCDE536DD4AF4C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PickUpLocations-PickUpLocationsUITests/Pods-PickUpLocations-PickUpLocationsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PickUpLocations-PickUpLocationsUITests/Pods-PickUpLocations-PickUpLocationsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PickUpLocations-PickUpLocationsUITests/Pods-PickUpLocations-PickUpLocationsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2D4B7B31955976262E73DB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PickUpLocationsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB45002A47E194EC2880B8FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PickUpLocations-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B126F09924ECED41006582BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1BC03BD24EE6F9100B75372 /* Array+Location.swift in Sources */,
+				B126F0F224ECF2E2006582BD /* UIColor+Hex.swift in Sources */,
+				B126F0F924ECF2E2006582BD /* SceneDelegate.swift in Sources */,
+				B126F0EE24ECF2E2006582BD /* LocationButton.swift in Sources */,
+				B1023E9024ECF7BD00F6E1C1 /* PickUpListWorker.swift in Sources */,
+				B126F0EF24ECF2E2006582BD /* UIImageView+Cache.swift in Sources */,
+				B126F0F724ECF2E2006582BD /* AppConstant.swift in Sources */,
+				B126F0F424ECF2E2006582BD /* APIManager.swift in Sources */,
+				B126F0EC24ECF2E2006582BD /* Dictionary+Decoder.swift in Sources */,
+				B1023E8A24ECF6E700F6E1C1 /* PickUpLocationViewController.swift in Sources */,
+				B1023E9224ECF7D000F6E1C1 /* PickUpListService.swift in Sources */,
+				B1023E8E24ECF79400F6E1C1 /* PickUpListInteractor.swift in Sources */,
+				B126F0ED24ECF2E2006582BD /* Tools.swift in Sources */,
+				B1023E8724ECF6C300F6E1C1 /* PickUpLocationCell.swift in Sources */,
+				B1023E8C24ECF77D00F6E1C1 /* PickUpListModels.swift in Sources */,
+				B1023E9624ECF7E800F6E1C1 /* PickUpListRouter.swift in Sources */,
+				B1023E9424ECF7DC00F6E1C1 /* PickUpListPresenter.swift in Sources */,
+				B1BC03BF24EE776400B75372 /* CLLocationDistance+km.swift in Sources */,
+				B126F0F824ECF2E2006582BD /* AppDelegate.swift in Sources */,
+				B1BC03BB24EE605B00B75372 /* LocationManager.swift in Sources */,
+				B126F0F624ECF2E2006582BD /* UIConstant.swift in Sources */,
+				B126F0F524ECF2E2006582BD /* Reachability.swift in Sources */,
+				B126F0F024ECF2E2006582BD /* UIAlertControllerExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B126F0AF24ECED46006582BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B130F81924EE78FE00E8AFB4 /* Seeds.swift in Sources */,
+				B130F81B24EE7CBF00E8AFB4 /* TestDoubles.swift in Sources */,
+				B130F82424EE82F000E8AFB4 /* PickUpListPresenterTests.swift in Sources */,
+				B130F82624EE83F300E8AFB4 /* PickUpLocationViewControllerTests.swift in Sources */,
+				B126F0B824ECED46006582BD /* PickUpLocationsTests.swift in Sources */,
+				B130F82224EE828F00E8AFB4 /* PickUpListInteractorUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B126F0BA24ECED46006582BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B130F82824EE87ED00E8AFB4 /* CustomKeywordsUtils.swift in Sources */,
+				B126F0C324ECED46006582BD /* PickUpLocationsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B126F0B524ECED46006582BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B126F09C24ECED41006582BD /* PickUpLocations */;
+			targetProxy = B126F0B424ECED46006582BD /* PBXContainerItemProxy */;
+		};
+		B126F0C024ECED46006582BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B126F09C24ECED41006582BD /* PickUpLocations */;
+			targetProxy = B126F0BF24ECED46006582BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B126F0AB24ECED46006582BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B126F0AC24ECED46006582BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B126F0C524ECED46006582BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B126F0C624ECED46006582BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B126F0C824ECED46006582BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76E791189B2C5CBFCEAE5930 /* Pods-PickUpLocations.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PickUpLocations/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.admin.PickUpLocations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B126F0C924ECED46006582BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 024984AA8CEA4EF604CE55FD /* Pods-PickUpLocations.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PickUpLocations/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.admin.PickUpLocations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B126F0CB24ECED46006582BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 079E834E1164644DB2C94602 /* Pods-PickUpLocationsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PickUpLocationsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.admin.PickUpLocationsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PickUpLocations.app/PickUpLocations";
+			};
+			name = Debug;
+		};
+		B126F0CC24ECED46006582BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07EA43CCEA6D06E229462A36 /* Pods-PickUpLocationsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PickUpLocationsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.admin.PickUpLocationsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PickUpLocations.app/PickUpLocations";
+			};
+			name = Release;
+		};
+		B126F0CE24ECED46006582BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3189449566083730DE968386 /* Pods-PickUpLocations-PickUpLocationsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PickUpLocationsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.admin.PickUpLocationsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PickUpLocations;
+			};
+			name = Debug;
+		};
+		B126F0CF24ECED46006582BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE6E8EB4A8A3B53C5CFC0A7 /* Pods-PickUpLocations-PickUpLocationsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PickUpLocationsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.admin.PickUpLocationsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PickUpLocations;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B126F09824ECED41006582BD /* Build configuration list for PBXProject "PickUpLocations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B126F0C524ECED46006582BD /* Debug */,
+				B126F0C624ECED46006582BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B126F0C724ECED46006582BD /* Build configuration list for PBXNativeTarget "PickUpLocations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B126F0C824ECED46006582BD /* Debug */,
+				B126F0C924ECED46006582BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B126F0CA24ECED46006582BD /* Build configuration list for PBXNativeTarget "PickUpLocationsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B126F0CB24ECED46006582BD /* Debug */,
+				B126F0CC24ECED46006582BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B126F0CD24ECED46006582BD /* Build configuration list for PBXNativeTarget "PickUpLocationsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B126F0CE24ECED46006582BD /* Debug */,
+				B126F0CF24ECED46006582BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B126F09524ECED41006582BD /* Project object */;
+}
