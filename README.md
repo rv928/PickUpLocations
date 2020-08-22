@@ -20,5 +20,15 @@
 ## API and parser
 - Alarmofire and SwiftyJSON
 
+## Sample Usecase guide (Tested from simulator only, not real device): 
+
+1. Fetched list locations from server using given API
+2. Fisplayed in screen using TableView
+3. Clicking on location icon app will ask user to provide location permissions.
+4. After providing location permission user will able to see sorted locations (nearest location in km) while changing location from Xcode location icon (above debugger).
+5. To reset sorting order I provided refresh icon, pressing on that location list will be reset.
+6. Everytime you changed location from Xcode debugger, list will be refreshed.
+
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
