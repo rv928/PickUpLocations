@@ -16,3 +16,13 @@ public class LocationButton: UIButton {
         }
     }
 }
+
+
+public class RefreshButton: UIButton {
+
+    override public var isHighlighted: Bool {
+        didSet {
+            alpha = isHighlighted ? 0.4 : 1
+        }
+    }
+}

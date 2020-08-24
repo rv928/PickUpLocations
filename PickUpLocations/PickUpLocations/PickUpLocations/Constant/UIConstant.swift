@@ -5,7 +5,7 @@
 import Foundation
 import UIKit
 
-struct UIConstant  {
+enum UIConstant  {
     
     static let appColor = "#FF6666"
     static let appTextColor = "#000000"
@@ -14,12 +14,12 @@ struct UIConstant  {
     static let tagTextColor = "#FFFFFF"
     static let navBgColor = "#FFFFFF"
     
-    struct ProgressHUD {
+    enum ProgressHUD {
         static let bgColor = "#FFFFFF"
         static let TextColor = "#141D16"
     }
     
-    struct Images {
+    enum Images {
         static let locationIcon = "icon_location"
         static let refreshIcon = "icon-refresh"
         static let correctfilledIcon = "correct-filled"

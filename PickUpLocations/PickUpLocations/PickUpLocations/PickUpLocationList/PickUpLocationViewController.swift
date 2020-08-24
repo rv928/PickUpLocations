@@ -94,7 +94,8 @@ class PickUpLocationViewController: UIViewController {
     func setupNavigationBar() {
         self.navigationItem.title = "Pomelo Pick Up"
         self.navigationController?.navigationBar.isTranslucent = false
-        let leftbutton = UIButton.init(type: .custom)
+        
+        let leftbutton = RefreshButton.init(type: .custom)
         leftbutton.setImage(UIImage.init(named:UIConstant.Images.refreshIcon), for: .normal)
         leftbutton.addTarget(self, action: #selector(self.refreshClicked), for: .touchUpInside)
         leftbutton.tintColor = UIColor.black
@@ -102,7 +103,7 @@ class PickUpLocationViewController: UIViewController {
         leftBarButton.accessibilityIdentifier = "navigation-refresh"
         self.navigationItem.leftBarButtonItem = leftBarButton
         
-        let rightbutton = UIButton.init(type: .custom)
+        let rightbutton = LocationButton.init(type: .custom)
         rightbutton.setImage(UIImage.init(named:UIConstant.Images.locationIcon), for: .normal)
         rightbutton.addTarget(self, action: #selector(self.locationbuttonClicked), for: .touchUpInside)
         let rightBarButton = UIBarButtonItem.init(customView: rightbutton)

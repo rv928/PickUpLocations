@@ -22,10 +22,8 @@
 		B126F0B824ECED46006582BD /* PickUpLocationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0B724ECED46006582BD /* PickUpLocationsTests.swift */; };
 		B126F0C324ECED46006582BD /* PickUpLocationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0C224ECED46006582BD /* PickUpLocationsUITests.swift */; };
 		B126F0EB24ECF2E2006582BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B126F0D324ECF2E1006582BD /* Main.storyboard */; };
-		B126F0EC24ECF2E2006582BD /* Dictionary+Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0D624ECF2E1006582BD /* Dictionary+Decoder.swift */; };
 		B126F0ED24ECF2E2006582BD /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0D824ECF2E1006582BD /* Tools.swift */; };
 		B126F0EE24ECF2E2006582BD /* LocationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0DA24ECF2E1006582BD /* LocationButton.swift */; };
-		B126F0EF24ECF2E2006582BD /* UIImageView+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0DC24ECF2E1006582BD /* UIImageView+Cache.swift */; };
 		B126F0F024ECF2E2006582BD /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0DD24ECF2E1006582BD /* UIAlertControllerExtension.swift */; };
 		B126F0F224ECF2E2006582BD /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0DF24ECF2E1006582BD /* UIColor+Hex.swift */; };
 		B126F0F424ECF2E2006582BD /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126F0E224ECF2E1006582BD /* APIManager.swift */; };
@@ -93,10 +91,8 @@
 		B126F0C224ECED46006582BD /* PickUpLocationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpLocationsUITests.swift; sourceTree = "<group>"; };
 		B126F0C424ECED46006582BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B126F0D324ECF2E1006582BD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		B126F0D624ECF2E1006582BD /* Dictionary+Decoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Decoder.swift"; sourceTree = "<group>"; };
 		B126F0D824ECF2E1006582BD /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		B126F0DA24ECF2E1006582BD /* LocationButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationButton.swift; sourceTree = "<group>"; };
-		B126F0DC24ECF2E1006582BD /* UIImageView+Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Cache.swift"; sourceTree = "<group>"; };
 		B126F0DD24ECF2E1006582BD /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
 		B126F0DF24ECF2E1006582BD /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		B126F0E224ECF2E1006582BD /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -263,7 +259,6 @@
 			isa = PBXGroup;
 			children = (
 				B1BC03B924EE604C00B75372 /* LocationManager */,
-				B126F0D524ECF2E1006582BD /* Generics */,
 				B126F0D724ECF2E1006582BD /* Tools */,
 				B126F0D924ECF2E1006582BD /* SubClass */,
 				B126F0DB24ECF2E1006582BD /* Extensions */,
@@ -271,14 +266,6 @@
 				B126F0E324ECF2E1006582BD /* Reachability */,
 			);
 			path = SupportingClass;
-			sourceTree = "<group>";
-		};
-		B126F0D524ECF2E1006582BD /* Generics */ = {
-			isa = PBXGroup;
-			children = (
-				B126F0D624ECF2E1006582BD /* Dictionary+Decoder.swift */,
-			);
-			path = Generics;
 			sourceTree = "<group>";
 		};
 		B126F0D724ECF2E1006582BD /* Tools */ = {
@@ -300,7 +287,6 @@
 		B126F0DB24ECF2E1006582BD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B126F0DC24ECF2E1006582BD /* UIImageView+Cache.swift */,
 				B126F0DD24ECF2E1006582BD /* UIAlertControllerExtension.swift */,
 				B126F0DF24ECF2E1006582BD /* UIColor+Hex.swift */,
 				B1BC03BC24EE6F9100B75372 /* Array+Location.swift */,
@@ -606,10 +592,8 @@
 				B126F0F924ECF2E2006582BD /* SceneDelegate.swift in Sources */,
 				B126F0EE24ECF2E2006582BD /* LocationButton.swift in Sources */,
 				B1023E9024ECF7BD00F6E1C1 /* PickUpListWorker.swift in Sources */,
-				B126F0EF24ECF2E2006582BD /* UIImageView+Cache.swift in Sources */,
 				B126F0F724ECF2E2006582BD /* AppConstant.swift in Sources */,
 				B126F0F424ECF2E2006582BD /* APIManager.swift in Sources */,
-				B126F0EC24ECF2E2006582BD /* Dictionary+Decoder.swift in Sources */,
 				B1023E8A24ECF6E700F6E1C1 /* PickUpLocationViewController.swift in Sources */,
 				B1023E9224ECF7D000F6E1C1 /* PickUpListService.swift in Sources */,
 				B1023E8E24ECF79400F6E1C1 /* PickUpListInteractor.swift in Sources */,
